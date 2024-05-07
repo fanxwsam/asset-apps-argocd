@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: bootstrap
-    repoURL: 'https://github.com/fanxwsam/asset-apps.git'
+    repoURL: 'https://github.com/fanxwsam/asset-apps-argocd.git'
     targetRevision: master
   syncPolicy:
     syncOptions:
