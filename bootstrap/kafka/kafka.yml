@@ -46,7 +46,7 @@ spec:
               value: PLAINTEXT://kafka-broker:9092
 
           # image: wurstmeister/kafka
-          image: bitnami//kafka
+          image: bitnami/kafka
           imagePullPolicy: IfNotPresent
           name: kafka-broker
           ports:
