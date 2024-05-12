@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-notifications
-          image: samuelest/api-notifications:6.5
+          image: samuelest/api-notifications:6.7
           imagePullPolicy: Always
           ports:
             - containerPort: 8088

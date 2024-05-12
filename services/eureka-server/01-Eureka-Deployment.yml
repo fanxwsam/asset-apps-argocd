@@ -18,8 +18,8 @@ spec:
     spec:
       containers:
         - name: eureka-server
-#          image: samuelest/eureka-server:latest
-          image: samuelest/eureka-server:6.5
+          #          image: samuelest/eureka-server:latest
+          image: samuelest/eureka-server:6.7
           ports:
             - containerPort: 8761
           env:
@@ -30,5 +30,3 @@ spec:
               memory: 576Mi
       # nodeSelector:
       #   app: api-apps
-
-   

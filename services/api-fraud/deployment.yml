@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-fraud
-          image: samuelest/api-fraud:6.5
+          image: samuelest/api-fraud:6.7
           imagePullPolicy: Always
           ports:
             - containerPort: 8081
@@ -24,7 +24,7 @@ spec:
               value: azure
           resources:
             requests:
-              memory: 576Mi              
+              memory: 576Mi
       restartPolicy: Always
   selector:
     matchLabels:

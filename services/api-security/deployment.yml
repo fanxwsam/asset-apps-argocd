@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-security
-          image: samuelest/api-security:6.5
+          image: samuelest/api-security:6.8
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
@@ -24,7 +24,7 @@ spec:
               value: azure
           resources:
             requests:
-              memory: 576Mi              
+              memory: 576Mi
       restartPolicy: Always
   selector:
     matchLabels:

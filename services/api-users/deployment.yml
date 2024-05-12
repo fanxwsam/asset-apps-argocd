@@ -12,14 +12,14 @@ spec:
       app: api-users
 
   template:
-    metadata:      
+    metadata:
       labels:
         app: api-users
     spec:
       containers:
         - name: api-users
-#          image: samuelest/bha-backend-api:1.0-SNAPSHOT
-          image: samuelest/api-users:6.5
+          #          image: samuelest/bha-backend-api:1.0-SNAPSHOT
+          image: samuelest/api-users:6.7
           # imagePullPolicy: IfNotPresent
           imagePullPolicy: Always
           ports:
@@ -36,7 +36,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: cosmos-db-secret
-                  key: uri                  
+                  key: uri
             - name: key
               valueFrom:
                 secretKeyRef:
@@ -45,5 +45,3 @@ spec:
           resources:
             requests:
               memory: 768Mi
-
-   

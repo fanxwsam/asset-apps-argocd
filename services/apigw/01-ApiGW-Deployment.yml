@@ -18,8 +18,8 @@ spec:
     spec:
       containers:
         - name: apigw
-#          image: samuelest/apigw:1.0-SNAPSHOT
-          image: samuelest/apigw:6.5
+          #          image: samuelest/apigw:1.0-SNAPSHOT
+          image: samuelest/apigw:6.7
           # imagePullPolicy: IfNotPresent
           imagePullPolicy: Always
           ports:
@@ -42,4 +42,3 @@ spec:
               memory: 576Mi
       # nodeSelector:
       #   app: api-apps
-   
