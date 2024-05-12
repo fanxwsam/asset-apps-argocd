@@ -36,12 +36,12 @@ spec:
       containers:
         #- image: wurstmeister/zookeeper
         - name: zookeeper
-          image: wurstmeister/zookeeper
-        #  image: bitnami/zookeeper:latest
+          # image: wurstmeister/zookeeper
+          image: bitnami/zookeeper:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 2181
           env:
             - name: ALLOW_ANONYMOUS_LOGIN
-              value: "yes"
+              value: 'yes'
       restartPolicy: Always
