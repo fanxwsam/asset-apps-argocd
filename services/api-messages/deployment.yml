@@ -12,6 +12,8 @@ spec:
       name: api-messages
       labels:
         app: api-messages
+      annotations:
+        linkerd.io/inject: enabled
     spec:
       containers:
         - name: api-messages

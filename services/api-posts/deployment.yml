@@ -16,10 +16,12 @@ spec:
       name: api-posts
       labels:
         app: api-posts
+      annotations:
+        linkerd.io/inject: enabled
     spec:
       containers:
         - name: api-posts
-#          image: samuelest/bha-backend-api:1.0-SNAPSHOT
+          #          image: samuelest/bha-backend-api:1.0-SNAPSHOT
           image: samuelest/api-posts:6.8
           # imagePullPolicy: IfNotPresent
           imagePullPolicy: Always
@@ -30,6 +32,4 @@ spec:
           #     value: azure
           resources:
             requests:
-              memory: 576Mi                  
-
-   
+              memory: 576Mi

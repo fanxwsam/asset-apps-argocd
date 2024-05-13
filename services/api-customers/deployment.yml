@@ -12,6 +12,8 @@ spec:
       name: api-customers
       labels:
         app: api-customers
+      annotations:
+        linkerd.io/inject: enabled
     spec:
       containers:
         - name: api-customer2
