@@ -4,7 +4,7 @@ metadata:
   labels:
     app: kafka-broker
   #name: kafka-service
-  name: kafka-broker
+  name: kafka-broker22
   namespace: asset
 spec:
   type: NodePort
