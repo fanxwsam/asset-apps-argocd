@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: verification-app-ingress-real
+  namespace: app-verify
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+    # acme.cert-manager.io/http01-edit-in-place: "true"
+
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: env-check.samsassets.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: frontend
+                port:
+                  number: 80
+  tls:
+    - hosts:
+        - env-check.samsassets.com
+      secretName: env-check-app-ingress-cert-tsl
